@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Community Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#news">News</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#signup">Sign Up / Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="news">
+            <h2>News</h2>
+            <div class="news-item">
+                <h3>Community Garden Project</h3>
+                <p>Our community garden project is starting next week. Join us for the kickoff event!</p>
+            </div>
+        </section>
+        <section id="events">
+            <h2>Events</h2>
+            <div class="event-item">
+                <h3>Weekly Yoga Class</h3>
+                <p>Every Saturday at 9 AM in the community center.</p>
+            </div>
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <div class="resource-item">
+                <h3>Local Library</h3>
+                <p>Visit our local library for books, internet access, and more.</p>
+                <a href="https://www.locallibrary.com" target="_blank">Visit Local Library</a>
+            </div>
+            <div class="resource-item">
+                <h3>Health Clinic</h3>
+                <p>Our community health clinic provides free check-ups and medical services.</p>
+                <a href="https://www.localhealthclinic.com" target="_blank">Visit Health Clinic</a>
+            </div>
+            <div class="resource-item">
+                <h3>Community Center</h3>
+                <p>The community center offers various programs and activities for all ages.</p>
+                <a href="https://www.communitycenter.com" target="_blank">Visit Community Center</a>
+            </div>
+            <div class="resource-item">
+                <h3>Recycling Services</h3>
+                <p>Learn about recycling services and how you can help the environment.</p>
+                <a href="https://www.recyclingservices.com" target="_blank">Learn More</a>
+            </div>
+        </section>
+        <section id="signup">
+            <h2>Sign Up / Login</h2>
+            <form id="auth-form">
+                <div class="form-group">
+                    <label for="auth-type">Select Action:</label>
+                    <select id="auth-type" required>
+                        <option value="signup">Sign Up</option>
+                        <option value="login">Login</option>
+                    </select>
+                </div>
+                <div class="form-group" id="username-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-group" id="email-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" id="auth-submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Community Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">&uarr;</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
